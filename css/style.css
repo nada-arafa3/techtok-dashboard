@@ -21,7 +21,7 @@ input, select {
     margin: 10px 0;
 }
 #email , #password{width:90%;
-            margin:auto}
+            margin-inline:auto}
 button {
   width: 100%;
   padding: 10px;
