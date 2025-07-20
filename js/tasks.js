@@ -1,7 +1,4 @@
 
-const user = JSON.parse(localStorage.getItem('user'));
-if (!user) window.location.href = 'index.html';
-
 const supabase = window.supabase.createClient(
   'https://hnuklvjbhanjvtxsijvo.supabase.co',
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhudWtsdmpiaGFuanZ0eHNpanZvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI5NTM4OTksImV4cCI6MjA2ODUyOTg5OX0.xQU1wXChKZOpP6UP0upevw9QAiApGpC_jTR1wcdxIWM'
