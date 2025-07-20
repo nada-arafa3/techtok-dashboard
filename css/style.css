@@ -20,7 +20,7 @@ input, select {
     padding: 10px;
     margin: 10px 0;
 }
-.login input{width:90%;
+#email , #password{width:90%;
             margin:auto}
 button {
   width: 100%;
