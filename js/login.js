@@ -1,11 +1,7 @@
-import { createClient } from '@supabase/supabase-js';
-
-
 const supabase = window.supabase.createClient(
   'https://hnuklvjbhanjvtxsijvo.supabase.co',
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhudWtsdmpiaGFuanZ0eHNpanZvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI5NTM4OTksImV4cCI6MjA2ODUyOTg5OX0.xQU1wXChKZOpP6UP0upevw9QAiApGpC_jTR1wcdxIWM'
 );
-
 
 async function login() {
   const email = document.getElementById('email').value;
@@ -23,11 +19,10 @@ async function login() {
     return;
   }
 
-  // احضار بيانات المستخدم من جدول users
   const { data: userProfile, error: userError } = await supabase
     .from('users')
     .select('*')
-    .eq('id', data.user.id)  // الربط بـ UID من Supabase Auth
+    .eq('id', data.user.id)
     .single();
 
   if (userError) {
@@ -36,7 +31,6 @@ async function login() {
     return;
   }
 
-  // حفظ البيانات
   localStorage.setItem('user', JSON.stringify(userProfile));
   window.location.href = 'dashboard.html';
 }

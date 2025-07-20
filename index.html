@@ -6,8 +6,8 @@
   <title>Techtok Login</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
@@ -17,16 +17,11 @@
     <button onclick="login()">Login</button>
     <p id="error" class="error"></p>
   </div>
-  
- <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-<script>
-  const supabase = window.supabase.createClient(
-   'https://hnuklvjbhanjvtxsijvo.supabase.co',
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhudWtsdmpiaGFuanZ0eHNpanZvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI5NTM4OTksImV4cCI6MjA2ODUyOTg5OX0.xQU1wXChKZOpP6UP0upevw9QAiApGpC_jTR1wcdxIWM'
 
-  );
-</script>
-<script src="login.js"></script>
+  <!-- مكتبة supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 
+  <!-- سكريبت تسجيل الدخول -->
+  <script src="js/login.js"></script>
 </body>
 </html>
