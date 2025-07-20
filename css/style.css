@@ -1,0 +1,80 @@
+
+*{  font-family: "Work Sans", sans-serif;}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(4, 21, 51);
+    padding: 50px;
+}
+.container {
+    width: 80%;
+    min-height: 70vh;
+    margin: auto;
+    background: rgb(4, 21, 51);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+input, select {
+    width: 47%;
+    padding: 10px;
+    margin: 10px 0;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+.error {
+  color: red;
+  margin-top: 10px;
+}
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#taskList li {
+  background-color: #f0f4f8;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-left: 5px solid #3498db;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 span{ font-family: "Yeseva One", serif;
+font-size: 50px;
+color: rgb(248, 88, 114);}
+
+h1,h3{color: rgb(255, 255, 255);}
+a {
+    color: white;
+    font-size: 31px;
+    text-decoration: none;
+}
+a:hover{color: #cc00aa;}
+a svg {
+    transform: rotate(61deg);
+    width: 41px;
+}
+img{
+    position: relative;
+    /* margin: auto; */
+    width: 13%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.container svg{
+    margin: auto;
+    width: 85px;
+    height: 70px;
+}
